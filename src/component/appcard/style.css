@@ -1,0 +1,60 @@
+.box-inner {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.2rem;
+  width: 10rem;
+}
+.card-box {
+  height: 13.2rem;
+  width: 14rem;
+  background: #1e1e1e;
+  border-radius: 30px;
+  border: double 0.3em transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-image: linear-gradient(#1e1e1e, #1e1e1e),
+    linear-gradient(180deg, rgba(0, 70, 62, 0) 0%, #02ffe2 100%);
+  /* background: linear-gradient(180deg, rgba(0, 70, 62, 0) 0%, #02ffe2 100%),
+    linear-gradient(0deg, #1e1e1e, #1e1e1e); */
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-box:hover {
+  transform: scale(1.1) !important;
+  border: double 0.4em transparent;
+
+  background-image: linear-gradient(#1e1e1e, #1e1e1e),
+    linear-gradient(180deg, #02ffe2 0%, #02ffe2 100%);
+  /* -webkit-box-shadow: 0px 5px 8px 10px rgba(2, 255, 226, 0.2); */
+}
+
+.box-inner img {
+  width: 4.5rem;
+  height: 4.5rem;
+  transition: all 1s;
+}
+.box-inner:hover img {
+  transform: rotateY(180deg);
+}
+
+
+.box-title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 1.5rem; */
+  line-height: 100%;
+  text-align: center;
+  color: #02ffe2;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}

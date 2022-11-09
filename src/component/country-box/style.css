@@ -1,0 +1,38 @@
+.box-country {
+  width: 28rem;
+  height: 28rem;
+  background: linear-gradient(180deg, #263238 0%, rgba(38, 50, 56, 0.5) 100%);
+  border: .3rem solid #02ffe2;
+  box-shadow: 0px 25px 80px rgba(2, 255, 226, 0.2);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  transition: all .2s;
+}
+.box-country:hover{
+  border: .5rem solid #02ffe2;
+  
+}
+.box-country .flag img {
+  width: 8.8rem;
+  height: 8.8rem;
+}
+.box-country p {
+  font-weight: 500;
+  /* font-size: 35px; */
+  line-height: 44px;
+  text-align: center;
+  color: #999999;
+  margin-top: auto;
+}
+.box-country span {
+  font-size: 2.5rem;
+  line-height: 32px;
+  text-align: center;
+  margin-top: auto;
+  color: #d8d8d8;
+  font-weight: 500;
+}

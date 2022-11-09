@@ -1,0 +1,163 @@
+.size-90 {
+  font-size: 9rem;
+}
+.size-80 {
+  font-size: 7rem;
+}
+.size-60 {
+  font-size: 6rem;
+}
+.size-56 {
+  font-size: 5.6rem;
+  /* width: 90%; */
+}
+.size-50 {
+  font-size: 5rem;
+}
+.size-48 {
+  font-size: 4.8rem;
+}
+.size-36 {
+  font-size: 3.6rem;
+}
+.size-32 {
+  font-size: 3.2rem;
+}
+.size-27 {
+  font-size: 2.7rem;
+}
+.size-16 {
+  font-size: 1.6rem;
+}
+.size-15 {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 850px) {
+  .size-60 {
+    font-size: 5.2rem;
+  }
+  .size-90 {
+    font-size: 6.8rem !important;
+  }
+  .size-56 {
+    font-size: 4.8rem;
+  }
+  .size-50 {
+    font-size: 4.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .size-60 {
+    font-size: 4.8rem;
+  }
+  .size-90 {
+    font-size: 4.8rem !important;
+  }
+  .size-56 {
+    font-size: 4.2rem;
+  }
+  .size-50 {
+    font-size: 3.9rem;
+  }
+  .size-36 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .size-60 {
+    font-size: 3.9rem;
+  }
+  .size-90 {
+    font-size: 4rem !important;
+  }
+  .size-56 {
+    font-size: 3.6rem;
+  }
+  .size-50 {
+    font-size: 3.6rem;
+  }
+  .size-36 {
+    font-size: 2.4rem;
+  }
+}
+.column-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-white{
+	color: white;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.ml-auto{
+	margin-left: auto;
+}
+.mr-auto{
+	margin-right: auto;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.interest-bg {
+  background-image: url("../assets/interest.png"), url("../assets/gradient.png");
+}
+.calling-bg {
+  background-image: url("../assets/calling.png"), url("../assets/gradient.png");
+}
+.paid-early-bg {
+  background-image: url("../assets/paid-early.png"),
+    url("../assets/gradient.png");
+}
+.top-ups-bg {
+  background-image: url("../assets/top-ups.png"), url("../assets/gradient.png");
+}
+.account-bg {
+  background-image: url("../assets/bg-account.png"),
+    url("../assets/gradient.png");
+}
+.card-bg {
+  background-image: url("../assets/Card.png"), url("../assets/gradient.png");
+}
+.money-bg {
+  background-image: url("../assets/international.png"),
+    url("../assets/gradient.png");
+}
+.who-is-solix-bg {
+  background-image: url("../assets/who-is-solix.png"),
+    url("../assets/gradient.png");
+}
+.partnership-bg {
+	background-image: url("../assets/partnership.png"),
+	  url("../assets/gradient.png");
+  }
+
+  .community-bg {
+    background-image: url("../assets/community-bg.png"),
+      url("../assets/gradient.png");
+    }
+.gradient-text {
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

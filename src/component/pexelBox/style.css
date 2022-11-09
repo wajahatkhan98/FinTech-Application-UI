@@ -1,0 +1,37 @@
+.pexel-box {
+  box-sizing: border-box;
+  position: relative;
+  border: double 0.8rem transparent;
+  background-image: linear-gradient(#060606, #060606),
+    linear-gradient(90deg, #b6ff9c 0.02%, #c7fa50 43.55%, #02ffe2 99.96%);
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-animation: glows 2s ease infinite;
+  cursor: pointer;
+  border-radius: 4.2rem;
+  flex: 1;
+  transition: padding 0.5s;
+  overflow: hidden;
+}
+
+.pexel-box:hover .pexel-box-inner {
+  transform: scale(1.09);
+}
+.pexel-box-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 3rem;
+  transition: all 0.5s;
+}
+.pexel-box-heading {
+  font-weight: 700;
+  color: #fff;
+}
+.pexel-number {
+  font-weight: 700;
+  color: #fff;
+}

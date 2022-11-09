@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "solix-f405d",
+    "solix": "solix-96d39"
+  },
+  "targets": {},
+  "etags": {}
+}

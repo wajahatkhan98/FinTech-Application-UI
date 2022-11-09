@@ -1,0 +1,60 @@
+.accordian-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  width: 42rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all .6s;
+  height: 5.2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.auto-height {
+  /* animation: autohight 2s linear infinite; */
+  height: auto !important;
+  overflow: visible;
+}
+@keyframes autohight {
+  0% {
+    height: 40rem !important;
+    /* overflow: visible; */
+  }
+  100% {
+    height: 40rem !important;
+    /* overflow: visible; */
+  }
+}
+.main-accordian {
+  position: relative;
+  width: 42rem;
+  height: 5.2rem;
+}
+.fixed-height {
+  overflow: hidden;
+}
+.accordian-text {
+  color: #fff;
+  margin-top: 3rem;
+}
+.accordian-head {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.accordian-title {
+  color: #fff;
+  display: flex;
+  flex: 1;
+  font-weight: 700;
+}
+.accordian-arrow-down {
+  color: #fff;
+  width: 1.4rem;
+}

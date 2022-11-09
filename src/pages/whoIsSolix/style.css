@@ -1,0 +1,74 @@
+.partner-section {
+  width: 100%;
+}
+.partner-section-heading {
+  margin: 8rem 4rem 10rem 4rem;
+}
+.who-is-solix-bottom {
+  margin: 14rem 4rem 10rem 4rem;
+}
+.accessible-world,
+.manifest-section,
+.service-section {
+  width: 100%;
+}
+
+.accessible-world-left {
+  flex: 1;
+}
+.accessible-world-para {
+  margin-top: 2rem;
+}
+.manifest-section {
+  gap: 2rem;
+}
+.manifest-section-right {
+  flex: 1;
+}
+.manifest-img {
+  width: 53rem;
+  height: 64rem;
+}
+.manifest-img img {
+  width: 100%;
+  height: 100%;
+}
+.how-why {
+  margin: 10rem 0;
+}
+.how-why-para {
+  max-width: 86rem;
+  margin-top: 1rem;
+}
+.line100 {
+  line-height: 100%;
+}
+.service-section-left {
+  flex: 1;
+  position: sticky;
+  height: 100%;
+  top: 20rem;
+}
+.service-section-right {
+  max-width: 70rem;
+}
+@media screen and (max-width: 1050px) {
+  .accessible-world-bottom {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .manifest-section,.service-section {
+    flex-direction: column !important;
+  }
+  .manifest-img {
+    width: 100%;
+    height: auto;
+  }
+  .service-section-right{
+    max-width: none;
+  }
+  .service-section-left{
+    position: unset;
+  }
+}

@@ -1,0 +1,94 @@
+.all-in-one {
+  width: 100%;
+
+}
+.items-box {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  /* border: double 0.3em transparent; */
+  /* background-image: linear-gradient( #050D0C,  #050D0C),
+    linear-gradient(
+      91.45deg,
+      #b6ff9c 3.36%,
+      #c7fa50 44.73%,
+      rgba(2, 255, 226, 0.12) 98.36%
+    ); */
+  /* background-origin: border-box; */
+  /* background-clip: content-box, border-box; */
+  -webkit-box-shadow: 0px -35px 100px rgba(2, 255, 226, 0.4),0px 35px 100px rgba(2, 255, 226, 0.4);
+  /* border-radius: 50px; */
+  /* -webkit-animation: glows 4s ease alternate infinite, spread 2s ease-in-out alternate infinite; */
+ 
+}
+@keyframes spread {
+  from {
+    -webkit-box-shadow: 0px 0px 60px rgba(2, 255, 226, 0.2);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 60px rgba(2, 255, 226, 0.7);
+  }
+}
+@keyframes glows {
+  0% {
+    background-image: linear-gradient( #050D0C,  #050D0C),
+      linear-gradient(0deg, #b6ff9c 0.02%, #c7fa50 43.55%, #02ffe2 99.96%);
+  }
+  100% {
+    background-image: linear-gradient( #050D0C,  #050D0C),
+      linear-gradient(360deg, #b6ff9c 0.02%, #c7fa50 43.55%, #02ffe2 99.96%);
+  }
+}
+
+.all-in-one-heading {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 50px; */
+  line-height: 100%;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #00ffe2 0%, rgba(2, 255, 226, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: all 3s;
+  /* position: absolute;
+    top: 10%;
+    left: 50%;*/
+    transform: translate(0%); 
+}
+.all-in-one-heading:hover{
+  background: linear-gradient(360deg, #00ffe2 0%, rgba(2, 255, 226, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+   background-clip: text; 
+  text-fill-color: transparent;
+
+}
+.box-content {
+  padding: 7rem 5rem 10rem 5rem;
+  background: #050d0c
+}
+.card-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}
+@media screen and (max-width: 850px) {
+.all-in-one {
+  padding: 4rem 1rem 0 1rem;
+}
+.box-content{
+  padding:5rem 2rem 10rem 2rem;
+}
+.items-box{
+  /* flex: 0 1; */
+  width: 100%;
+}
+}

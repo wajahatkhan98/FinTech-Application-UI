@@ -1,0 +1,126 @@
+.service-card2 {
+  position: relative;
+}
+.service-card2-circle {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: calc(50% - 1.6rem);
+  top: 1.6rem;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.service2-box {
+  border-radius: 3rem;
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* animation: spread 3s alternate infinite linear; */
+
+}
+.service2-box:hover::before{
+  padding: .7rem;
+}
+.service-card2:hover .service-card2-circle{
+  transform: scale(1.2);
+}
+.service2-box::before {
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  inset: 0;
+  padding: 5px;
+  border-radius: 3rem;
+
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(0 0) content-box, linear-gradient(transparent 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+.service2-box-inner {
+  padding: 4rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.49) 100%);
+  z-index: -1;
+  border-radius: 3rem;
+}
+.service2-box-heading {
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.service2-box-para {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  display: flex;
+  margin: 1rem auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.line::after {
+  margin: 0 auto;
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 0.7rem;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  border-radius: 1rem;
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  transition: all 0.5s;
+}
+@media screen and (max-width: 450px) {
+  .service2-box{
+    width: 95% !important;
+    margin: auto;
+  }
+  .service-card2-main{
+    flex-direction: column;
+  }
+}

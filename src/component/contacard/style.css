@@ -1,0 +1,69 @@
+.conta-card {
+  display: flex;
+  position: relative;
+  
+}
+@keyframes sclae {
+  100%{
+    margin-top: 2rem;
+  }
+}
+.img-cirlce {
+  width: 14rem;
+  height: 14rem;
+  background: linear-gradient(91.45deg, #b6ff9c 3.36%, #c7fa50 98.36%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14rem;
+  position: absolute;
+  top: 0;
+  left: -10rem;
+  transition: all .5s;
+  cursor: pointer;
+}
+.circle-img {
+  width: 6.5rem !important;
+  height: 9.171rem !important;
+  animation: scale 1s alternate infinite linear;
+  
+}
+@keyframes scale {
+  0%{
+    transform: scale(.9);
+  }
+  100%{
+    transform: scale(1.15);
+  }
+}
+.card-content {
+  animation: spread 3s alternate infinite linear;
+  width: 55.947rem;
+  /* height: 19.007rem; */
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #02ffe2;
+  border-radius: 30px;
+  padding: 2.5rem 2.5rem 4.5rem 5rem;
+  color: white;
+}
+@media screen and (min-width: 1600px) {
+  .card-content {
+    width: 45.947rem;
+  }
+}
+.card-content h2 {
+  font-size: 3rem;
+  line-height: 162%;
+  /* or 49px */
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  font-weight: 700;
+}
+.card-content p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 162%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}

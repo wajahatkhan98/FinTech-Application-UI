@@ -1,0 +1,27 @@
+.subheading-with-line{
+    color: white;
+    font-weight: 700;
+}
+.subheading-with-line::after{
+    margin: .5rem 0;
+    content: "";
+    width: 42rem;
+    height: 0.5rem;
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      91.45deg,
+      #b6ff9c 3.36%,
+      #c7fa50 44.73%,
+      #02ffe2 98.36%
+    );
+    border-radius: 1rem;
+    background: linear-gradient(
+      91.45deg,
+      #b6ff9c 3.36%,
+      #c7fa50 44.73%,
+      #02ffe2 98.36%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    transition: all 0.5s;
+
+}

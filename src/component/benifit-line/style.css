@@ -1,0 +1,23 @@
+.benifit-line {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
+	padding: 48px 5rem;
+}
+@media screen and (max-width: 800px) {
+	.benifit-line {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.benifit-heading {
+	font-weight: 700;
+	color: #fff;
+}
+.benifit-heading span {
+	color: #c7fa50;
+}

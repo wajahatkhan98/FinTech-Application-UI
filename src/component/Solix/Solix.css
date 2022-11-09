@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+.solix-apps {
+  /* margin: 100px 0; */
+  margin-bottom: 3rem;
+  width: 100%;
+  overflow: hidden;
+  /* opacity: 0.8; */
+}
+.solix-app-row {
+  /* background-image: url('../../assets/Circle.png'); */
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 85vh;
+  margin: 0 0 20px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.solix-app-right-col {
+}
+.group-2 {
+  margin-right: auto;
+  background-color: transparent;
+  width: 50%;
+  height: 90rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: -10rem; */
+  margin-top: -10rem;
+}
+.group-2 img {
+  margin-top: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.solix-app-right-col img {
+  width: 45%;
+  opacity: 1;
+  height: auto;
+  transform: scale(1.3);
+}
+.solix-app-right-col .phone {
+  width: 12%;
+  opacity: 1;
+  height: auto;
+  transform: rotate(300deg);
+  margin-top: -260px;
+  margin-left: 116px;
+}
+.solix-app-left-col {
+  flex-basis: 50%;
+}
+.solix-app-text {
+  max-width: 800px;
+}
+.solix-app-text h1 {
+  color: #ffffff;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 50px; */
+  line-height: 58px;
+  /* width: 68%; */
+  text-align: center;
+  margin: 0;
+  margin-left: 5rem;
+}
+.solix-app-text h3 {
+  font-weight: 700;
+  /* font-size: 65px; */
+  margin: 0;
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  width: 90%;
+  text-align: center;
+}
+.images {
+  display: flex;
+  gap: 10rem;
+}
+.atm-card {
+  width: 100%;
+  height: 70rem;
+  position: relative;
+}
+.atm-card img {
+  width: 60rem;
+  height: 60rem;
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+  animation: jump 1s linear alternate infinite;
+}
+.phone-plane img {
+  width: 51rem;
+  height: 67rem;
+  transform: rotate(-44deg);
+  position: absolute;
+  top: 48rem;
+  left: 10rem;
+}
+@keyframes jump {
+  0% {
+    top: 5rem;
+  }
+  100% {
+    top: 3rem;
+  }
+}
+.images img {
+  width: 80rem;
+  height: 53rem;
+}
+.solix-app-text p {
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  margin-top: 15px;
+}
+.solix-app-text button {
+  margin: 30px 0;
+}
+.spacer {
+  width: 40rem;
+  height: 40rem;
+}
+.warpper {
+  position: relative;
+  width: 100%;
+  height: 100rem;
+}
+.cirlce-dotted-wrapper {
+  width: 100rem;
+  height: 100rem;
+  /* position: relative; */
+}
+.cirlce-dotted {
+  width: 100rem;
+  height: 100rem;
+  border: 0.5rem dashed white;
+  border-radius: 100%;
+  position: absolute;
+  top: -10rem;
+  right: -25rem;
+}
+.cirlce-dotted:hover {
+  border-color: #02ffe2;
+}
+.circl-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.child-cicle {
+  width: 87rem;
+  height: 87rem;
+  border-radius: 100%;
+  position: absolute;
+  right: -40rem;
+  top: 6rem;
+  box-sizing: border-box;
+  border: 11.8rem solid rgba(254, 223, 0, 0.7);
+  transition: all 0.5s;
+}
+.child-cicle:hover {
+  border: 11.8rem solid rgba(254, 223, 0, 1);
+}
+@media screen and (min-width: 555px) and (max-width: 700px) {
+  .solix-app-row {
+    min-height: 110vh !important;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .group-2 {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.9) !important;
+  }
+}
+@media screen and (min-width: 1350px) and (max-width: 1550px),
+  (min-width: 1000px) and (max-width: 1200px) {
+  .phone-plane img {
+    top: 38rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .cirlce-dotted {
+    transform: scale(0.8) !important;
+    right: -28rem;
+  }
+  .solix-app-row {
+    margin-left: 0rem;
+  }
+  .group-2 {
+    transform: scale(0.8) !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .solix-app-row {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .solix-app-left-col {
+    flex-basis: 0%;
+  }
+  .cirlce-dotted {
+    top: 0rem;
+  }
+  .solix-app-row {
+    margin: 0;
+  }
+  .group-2 img {
+    height: 70rem;
+    width: 60rem;
+    opacity: 0;
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .solix-app-row {
+    min-height: 110vh !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  .solix-apps {
+    /* margin-bottom: 28rem !important; */
+  }
+}
+@media screen and (max-width: 550px) {
+  .cirlce-dotted {
+    transform: scale(0.8) !important;
+    right: -30rem;
+  }
+  .spacer {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cirlce-dotted {
+    transform: scale(0.7) !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .cirlce-dotted {
+    transform: scale(0.6);
+    right: -38rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cirlce-dotted {
+    transform: scale(0.55) !important;
+    right: -38rem;
+  }
+}

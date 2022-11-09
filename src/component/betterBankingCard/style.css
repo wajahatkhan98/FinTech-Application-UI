@@ -1,0 +1,57 @@
+
+@media screen and (max-width: 500px) {
+    .security-card-item1 {
+      width: 90%;
+      margin: auto;
+    }
+    
+}
+.security-card-inner .img-sec img{
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+.security-card-inner {
+  padding: 3rem;
+  display: flex;
+  color: #fff;
+}
+.security-card-inner .title {
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 96.5%;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #ffffff;
+}
+.haading-security-card{
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.haading-security-card span{
+  /* line-height: 105%; */
+}
+.security-card-left{
+  flex: .6;
+}
+.security-card-right{
+  flex: .4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.security-card-icon{
+  width: 10.2rem;
+  height: 10.2rem;
+}
+.security-card-icon img{
+  width: 100%;
+  height: 100%;
+}
+.para-security-card{
+  margin-top: 2rem;
+  font-weight: 400;
+  width: 90%;
+}

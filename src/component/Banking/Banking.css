@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+body {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#courses {
+  /* padding: 100px 0; */
+  position: relative;
+  /* opacity: 0.8; */
+  min-height: 100vh;
+  display: flex;
+  background-color: #000000;
+  /* background-image: url("../../assets/globe\ -\ Glow\ 1.png"); */
+  background-image: url(../../assets/globe.gif);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#courses::after {
+  /* background-image: url("../../assets/globe\ -\ Glow\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 0;
+  transform: translate(0%);
+}
+.group-5 {
+  position: relative;
+}
+.bank-phone {
+  position: absolute;
+  top: 0;
+  width: 26rem;
+  height: 52rem;
+  right: 13rem;
+  top: 11.6rem;
+}
+.left {
+  padding: 5rem;
+  flex: 1 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+}
+.left,
+.right {
+  flex: 1;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.group-5 {
+  flex: 1;
+  width: 100%;
+  height: 100rem;
+}
+.group-5 img {
+  /* margin-top: 25rem; */
+
+  width: 100%;
+}
+
+.left h1 {
+  font-weight: 800;
+
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin: 0;
+  line-height: 90%;
+  padding-left: 4rem;
+  width: 110%;
+}
+.left h3 {
+  font-weight: 700;
+  /* font-size: 36px; */
+  color: white;
+  /* margin: 14px; */
+  padding-left: 4rem;
+  padding-top: 4rem;
+  /* line-height: 5rem; */
+}
+.left p {
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  margin-top: 2px;
+  /* display: flex; */
+  padding-left: 4rem;
+}
+@media screen and (max-width: 850px) {
+  #courses {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .group-5 img {
+    /* margin-top: 5rem; */
+  }
+}

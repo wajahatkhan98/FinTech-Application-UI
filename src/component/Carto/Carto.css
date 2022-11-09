@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+.carto {
+  margin-top: 10rem;
+}
+.carto-body {
+  background-image: url(../../assets/Lines1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130% 160%;
+  z-index: 1000000;
+}
+.main {
+  margin: 2rem auto;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: center;
+  min-height: 450px;
+}
+.carto {
+  min-height: 700px;
+}
+main .section {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 40rem;
+  padding: 5px 30px 18px 30px;
+  box-shadow: 0.5px 0.5px 12px 0px #80808042;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 8.2rem auto;
+  z-index: 111;
+  /* height: 18.3rem; */
+}
+.card.card-supervisor:hover,
+.card.card-calculator:hover,
+.card.card-team_builder:hover {
+  /* animation: spread 2s ease-in-out alternate infinite; */
+  border: 5px solid rgba(2, 255, 226, 1);
+  box-sizing: border-box;
+}
+.card.card-supervisor,
+.card.card-calculator,
+.card.card-team_builder {
+  /* border: 3px solid rgba(2, 255, 226, .3); */
+  /* border: 3px solid rgb(12, 13, 13); */
+  border: 3px solid rgb(1, 178, 158, 0.7);
+  transition: all 0.8s;
+}
+/* .card.card-supervisor {
+  border: 3px solid rgb(1, 178, 158);
+
+} */
+
+center h3 {
+  /* font-size: 32px; */
+  color: white;
+  letter-spacing: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+center h1 {
+  /* font-size: 42px; */
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: 10px;
+  margin: 0;
+}
+center p {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  line-height: 24px;
+}
+.dot {
+  height: 31px;
+  width: 31px;
+  background-color: rgba(2, 255, 226, 1);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: calc(50% - 10px);
+  bottom: 20px;
+}
+
+.card.card-team_builder {
+  /* border: 3px solid rgba(2, 255, 226, 1); */
+  /* border: 3px solid hsl(155, 100%, 49%); */
+  /* border: 3px solid rgb(1, 178, 158); */
+  position: relative;
+  top: 80px;
+  transition: all 0.4s;
+}
+
+.card.card-calculator {
+  /* border: 3px solid hsl(155, 100%, 49%); */
+  /* border: 3px solid rgba(2, 255, 226, 1); */
+  /* border: 3px solid rgb(1, 178, 158); */
+  position: relative;
+  transition: all 0.4s;
+}
+.card .card-body {
+}
+.card .card-body .card-title {
+  /* font-size: 20px; */
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.card .card-body .card-text {
+  /* font-size: 11px; */
+  margin-top: 8px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+}
+.card .card-footer {
+  margin-top: 20px;
+}
+.card .card-footer .card-img {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.card .card-footer .card-img img {
+  width: 50px;
+  height: 50px;
+}
+/* .img-section-img{
+  background-image: url(../../assets/Lines.png);
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+@media screen and (max-width: 1200px) {
+  .card {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card.card-team_builder {
+    top: 0;
+  }
+  .card {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .from90-at-500 {
+    font-size: 4rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .from90-at-500 {
+    font-size: 3.5rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .from90-at-500 {
+    font-size: 3rem !important;
+  }
+  center p {
+    width: 90%;
+  }
+}

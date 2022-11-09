@@ -1,0 +1,66 @@
+.container_section {
+	background-image: url(../../assets/Rise2.png);
+	background-position: center -5rem;
+	background-repeat: no-repeat;
+	background-size: 110%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper2_details {
+	width: 76rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30rem;
+}
+.wrapper2_details::after {
+	margin: 1rem auto;
+	content: '';
+	width: 70%;
+	height: 0.5rem;
+	border: 1px solid;
+	border-image-source: linear-gradient(
+		91.45deg,
+		#b6ff9c 3.36%,
+		#c7fa50 44.73%,
+		#02ffe2 98.36%
+	);
+	border-radius: 1rem;
+	background: linear-gradient(
+		91.45deg,
+		#b6ff9c 3.36%,
+		#c7fa50 44.73%,
+		#02ffe2 98.36%
+	);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	transition: all 0.5s;
+}
+
+.mid3_bottom_details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.deatails-heading-sub3 {
+	font-size: 3rem;
+}
+
+.bottom_section {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+}
+.bottom_section img{
+	width: 100%;
+}
+.deatails-heading {
+	font-weight: 700;
+}

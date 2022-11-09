@@ -1,0 +1,50 @@
+.card1-main {
+  width: 38.1rem;
+  height: 13.8rem;
+  background-color: #19181d;
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  /* background: #FDDE0A; */
+  /* #19181D black */
+}
+.card1-main-left {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.card1-arrow-forward {
+  width: 5rem;
+  height: 5rem;
+  background: #fdde0a;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -3rem;
+  border: 3px solid #1a191c;
+}
+.card1-main-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1-main-right-para {
+  color: #fff;
+  font-weight: 400;
+}
+.card1-arrow-forward img {
+  width: 3rem;
+  height: 3rem;
+}
+.card1-main-left-flag {
+    width: 10rem;
+    height: 10rem;
+}
+.card1-main-left-flag img{
+    width: 100%;
+    height: 100%;
+}

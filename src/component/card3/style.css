@@ -1,0 +1,33 @@
+.card3 {
+    width: 37rem;
+    padding: 1rem 1rem 1rem 2rem;
+    box-shadow: 0.5px 0.5px 12px 0px #80808042;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 111;
+    position: relative;
+  }
+  .card3:hover {
+    border: 5px solid rgba(2, 255, 226, 1);
+    box-sizing: border-box;
+  }
+  .card3{
+    /* border: 3px solid rgba(2, 255, 226, .3); */
+    /* border: 3px solid rgb(12, 13, 13); */
+    border: 3px solid rgb(1, 178, 158, 0.7);
+    transition: all 0.8s;
+  }
+  .card3:hover .dot3{
+    transform: scale(1.1);
+  }
+  .dot3 {
+    height: 3.1rem;
+    width: 3.1rem;
+    background-color: rgba(2, 255, 226, 1);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -2rem;
+    bottom: calc(50% - 1.55rem);
+    transition: all .6s;
+  }

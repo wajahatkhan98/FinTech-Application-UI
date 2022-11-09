@@ -1,0 +1,72 @@
+* {
+  font-family: Outfit, sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Outfit, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  contain: paint;
+  /* overflow-x: hidden !important; */
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: Outfit, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  font-size: 62.5%;
+  contain: paint;
+  /* max-height: auto !important; */
+}
+
+@media screen and (min-width: 100.1em) {
+  html {
+    font-size: 75.5% !important;
+  }
+}
+@media screen and (min-width: 96.875em) and (max-width: 100.09em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (max-width: 96.875em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 45%;
+  }
+}
+/* @media screen and (max-width:37.5em) {
+  html{
+    font-size: 50%;
+  }
+}
+@media screen and (max-width:56.25em) {
+  html{
+    font-size: 56%;
+  }
+}
+
+
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+

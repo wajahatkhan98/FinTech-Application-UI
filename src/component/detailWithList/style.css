@@ -1,0 +1,76 @@
+.detail-with-list-main {
+  display: flex;
+  min-height: 77rem;
+  background-image: url(../../assets/globe\ -\ Glow\ 1.png);
+  background-position: center 0rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  padding: 10rem 4rem 2rem 4rem;
+  color: #fff;
+}
+.detail-with-list-left,
+.detail-with-list-right {
+  width: 50%;
+}
+.detail-with-list-heading {
+  color: #fff;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.detail-with-list-heading span:first-child {
+  /* color: #02ffe2; */
+  background: linear-gradient(91.45deg, #b6ff9c 3.36%, #02ffe2 98.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.detail-with-list-heading span:nth-child(2) {
+  /* color: #02ffe2; */
+  background: linear-gradient(91.45deg, #b6ff9c 3.36%, #c7fa50 98.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.detail-with-list-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-with-list-para {
+  font-weight: 400;
+  margin-top: 2rem;
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+.countries-list2 {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+    .detail-with-list-para{
+        width: 95%;
+        margin: 0 auto;
+    
+      }
+}
+@media screen and (max-width: 700px) {
+  .detail-with-list-main {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .detail-with-list-left,
+  .detail-with-list-right {
+    width: 95%;
+    margin: 0 auto;
+
+  }
+}

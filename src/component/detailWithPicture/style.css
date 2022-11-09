@@ -1,0 +1,222 @@
+.detail-with-picture {
+  display: flex;
+}
+.detail-with-picture-left {
+  width: 55%;
+}
+.detail-with-picture-heading {
+  line-height: 100%;
+}
+.detail-with-picture-right {
+  width: 45%;
+}
+.detail-with-picture-para {
+  margin: 3rem 0 6rem 0;
+}
+.detail-with-picture {
+  width: 90%;
+  margin: auto;
+}
+.left-picture-atm-card {
+  position: relative;
+  top: -10rem;
+  left: 10rem;
+  width: 50rem;
+  height: 50rem;
+  z-index: 1;
+  animation: jump1 1s linear alternate infinite;
+}
+@keyframes jump1 {
+  0% {
+    top: -10rem;
+  }
+  100% {
+    top: -8rem;
+  }
+}
+.pictures-circles {
+  width: 70rem;
+  position: relative;
+  top: -37rem;
+  z-index: 0;
+}
+.left-picture {
+  position: relative;
+  height: 70rem;
+}
+
+.carbon-sec-small {
+  position: absolute;
+  top: -1rem;
+  right: 14rem;
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.5s;
+  z-index: 2;
+  cursor: pointer;
+  /* animation: placechange 4s linear alternate infinite; */
+}
+.carbon-sec-large {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 11rem;
+  height: 11rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* animation: placechange 4s linear alternate infinite; */
+}
+
+@keyframes placechange {
+  0% {
+    /* top: -1rem;
+    right: 14rem; */
+    width: 5rem;
+    height: 5rem;
+  }
+  100% {
+    /* top: 4rem;
+  right: 1rem; */
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+.carbon-sec-small:hover,
+.carbon-sec-small1:hover {
+  transform: scale(1.7);
+}
+.carbon-sec-small:hover ~ .carbon-sec-large,
+.carbon-sec-small1:hover ~ .carbon-sec-large1 {
+  transform: scale(0.6);
+}
+.left-picture-atm-card img,
+.pictures-circles img,
+.carbon-sec-small img,
+.carbon-sec-large img,
+.left-picture-atm-card1 img,
+.pictures-circles1 img,
+.carbon-sec-small1 img,
+.carbon-sec-large1 img {
+  width: 100%;
+  height: 100%;
+}
+.card-and-check {
+  position: relative;
+}
+.left-picture1 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.carbon-sec-small1 {
+  width: 7rem;
+  height: 7rem;
+  transition: all 0.5s;
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  /* right: 0; */
+  /* top: 10rem; */
+}
+.carbon-sec-large1 {
+  width: 15rem;
+  height: 15rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  top: 7rem;
+  left: -3rem;
+}
+.circles-group2 {
+  display: flex;
+  gap: 5rem;
+  position: absolute;
+  right: -13rem;
+  top: 28rem;
+}
+.left-picture-atm-card1 img {
+  width: 100%;
+}
+.left-picture-atm-card1 {
+  width: 70rem;
+  height: 70rem;
+  position: relative;
+  top: 15rem;
+  left: 4rem;
+  z-index: 1;
+  animation: jump2 1s linear alternate infinite;
+}
+@keyframes jump2 {
+  0% {
+    top: 15rem;
+  }
+  100% {
+    top: 18rem;
+  }
+}
+.pictures-circles1 {
+  width: 90rem;
+  position: relative;
+  top: -17rem;
+}
+.pictures-circles1 img {
+  width: 100%;
+  height: 100%;
+}
+.card-and-check1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+  .left-picture1{
+    transform: scale(.85);
+  }
+}
+@media screen and (max-width: 600px) {
+  .left-picture1{
+    transform: scale(.75);
+  }
+}
+@media screen and (max-width: 500px) {
+  .left-picture1{
+    transform: scale(.6);
+  }
+}
+@media screen and (max-width: 400px) {
+  .left-picture1{
+    transform: scale(.5);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .detail-with-picture-right {
+    margin: auto;
+  }
+  .detail-with-picture-left {
+    width: 90%;
+  }
+  .detail-with-picture {
+    flex-direction: column;
+  }
+  .left-picture-atm-card {
+    /* top: 10rem; */
+  }
+  .pictures-circles {
+    /* top: 0; */
+  }
+  .left-picture {
+    /* top: 22rem; */
+    display: none;
+  }
+  .left-picture1 {
+    display: flex;
+  }
+  .detail-with-picture-right {
+    width: 100%;
+  }
+}

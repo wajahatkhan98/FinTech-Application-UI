@@ -1,0 +1,88 @@
+.benifit-card {
+  /* border-radius: 16px;
+  border: 5px solid;
+  border-image-source: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+
+
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient( 0 0) content-box, linear-gradient(transparent 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: inherit;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden; */
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+.benifit-icon{
+  transition: all .6s;
+}
+.benifit-card:hover .benifit-card-inner .benifit-icon {
+  transform: rotateY(180deg);
+}
+.benifit-card:hover::before {
+  padding: 8px;
+}
+
+.benifit-card::before {
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  inset: 0;
+  padding: 5px;
+  border-radius: 1.6rem;
+  background: linear-gradient(
+    91.45deg,
+    #b6ff9c 3.36%,
+    #c7fa50 44.73%,
+    #02ffe2 98.36%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(0 0) content-box, linear-gradient(transparent 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-backface-visibility: hidden;
+}
+.benifit-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem;
+  z-index: 11;
+}
+.benifit-card-heading {
+  /* width: 307px; */
+  /* height: 35px; */
+  /* Subtitle */
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 96.5%;
+  flex-wrap: wrap;
+  /* identical to box height, or 35px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
